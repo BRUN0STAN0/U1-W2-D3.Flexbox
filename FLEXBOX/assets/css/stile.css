@@ -419,13 +419,10 @@ main {
     flex-direction: column-reverse;
     background-color: white;
     border: 0;
-
     min-width: 20em;
+    gap: 15px;
 }
 
-#post div {
-    margin-right: 15px;
-}
 
 @media screen and (max-width: 500px) {
     header div {
