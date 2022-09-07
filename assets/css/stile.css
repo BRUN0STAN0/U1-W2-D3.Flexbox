@@ -405,14 +405,26 @@ footer a {
 /* ESERCIZIO DISPLAY FLEX */
 
 
-header div,
-main {
+header div {
     display: flex;
-
+    justify-content: space-around;
 }
 
-main aside div {
-    min-width: 250px;
+main {
+    display: flex;
+}
+
+#post {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: white;
+    border: 0;
+
+    min-width: 20em;
+}
+
+#post div {
+    margin-inline: 10px;
 }
 
 @media screen and (max-width: 500px) {
@@ -424,6 +436,11 @@ main aside div {
 @media screen and (max-width:800px) {
     main {
         flex-direction: column;
+    }
+
+    #post {
+        display: flex;
+        flex-direction: row;
     }
 }
 
