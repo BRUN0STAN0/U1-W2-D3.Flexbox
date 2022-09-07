@@ -409,6 +409,10 @@ main {
     grid-template-columns: 2fr 1fr;
 }
 
+aside section {
+    display: sticky;
+    top: 400px;
+}
 
 @media screen and (max-width: 800px) {
     main {
